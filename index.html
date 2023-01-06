@@ -10,6 +10,7 @@
   <script src="js/script.js"></script>
 </head>
 <body>
+  <!-- 헤더의 포지션을 fixed로 하여 페이지 윗쪽에 띄워 놓는다. -->
   <header>
     <div class="inner">
       <a href="#">
@@ -17,15 +18,17 @@
       </a>
       <nav>
         <ul id="gnb">
-          <li><a href="#">Menu1</a></li>
-          <li><a href="#">Menu2</a></li>
-          <li><a href="#">Menu3</a></li>
-          <li><a href="#">Menu4</a></li>
-          <li><a href="#">Menu5</a></li>
+          <li><a href="#page0">Menu1</a></li>
+          <li><a href="#page1">Menu2</a></li>
+          <li><a href="#page2">Menu3</a></li>
+          <li><a href="#page3">Menu4</a></li>
+          <li><a href="#page4">Menu5</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <!-- 각 페이지에 id를 부여하고 인덱스 번호를 고려하여 0번 부터 정수를 부여한다.  -->
   <div id="page0" style="background-image: url(img/yoga1.jpg);">
     <h2>A Beginner's Class</h2>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur rem earum minima doloribus perferendis, tempora voluptate! Ex adipisci praesentium fugiat facilis et mollitia, velit, voluptates cum distinctio amet accusantium, quia maiores quas temporibus ad numquam suscipit voluptas dolorem totam. Id incidunt optio est eligendi asperiores veniam explicabo. Quasi, illum! Magnam.</p>
@@ -55,7 +58,11 @@
     <div class="copy">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium animi commodi doloremque adipisci eos odio exercitationem autem nisi vitae, deleniti ab nihil consequuntur dolorum magni atque magnam? Minima modi perferendis magnam in dignissimos nemo blanditiis repudiandae dolore error harum officiis veritatis praesentium, fugit reiciendis vero qui et animi distinctio aperiam.
     </div>
-    <div class="sns"></div>
+    <div class="sns">
+      <a href="#"><img class="social" src="img/kakaotalk.png" alt="kakaotalk"></a>
+      <a href="#"><img class="social" src="img/facebook.png" alt="facebook"></a>
+      <a href="#"><img class="social" src="img/instagram.png" alt="instagram"></a>
+    </div>
   </footer>
   <a href="#"><i class="xi-arrow-top gotop"></i></a>
 </body>
