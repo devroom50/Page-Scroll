@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @charset 'utf-8';
 
 * {box-sizing: border-box;}
@@ -8,40 +7,26 @@ a:link, a:visited {color: inherit;text-decoration: none;}
 nav ul {list-style: none;margin: 0;padding: 0;box-sizing: border-box;}
 ::-webkit-scrollbar {width: 0;}
 
-body {color: #333;font-size: 12px;}
+/* body에 overflow: hidden 속성을 부여하면 스크롤시 일정한 거리 만큼만 이동 */
+body {color: #333;font-size: 12px;overflow: hidden;} 
 
-header {position: fixed;width: 100%;z-index: 8;}
-header>.inner {width: 1200px;margin: 0 auto;padding: 30px 0;position: relative;}
-header>.inner>nav {position: absolute;top: 30px;right: 10px;}
+header {position: fixed;width: 100%;z-index: 8;padding: 20px 0;transition-duration: .2s;}
+header:hover {background-color: #fff;color: #333;}
+header>.inner {width: 1200px;margin: 0 auto;padding: 10px 0;position: relative;}
+header>.inner>nav {position: absolute;top: 20px;right: 10px;}
 #gnb {display: flex;}
-#gnb>li>a {display: block;padding: 10px 40px;font-size: 18px;color: #fff;}
-
+#gnb>li>a {display: block;padding: 10px 40px;font-size: 22px;color: #333;transition-duration: .4s;}
+#gnb>li:hover>a {background-color: #02cd32;color: #fff;}
 
 div[id*=page] {width: 100%;height: 100%;position: relative;background-size: cover;background-position: center;}
 div[id*=page]>h2 {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size: 60px;color: #fff;width: 70%;text-align: center;}
 div[id*=page]>p {position: absolute;top: 60%;left: 50%;transform: translate(-50%, -50%);font-size: 16px;color: #fff;width: 60%;}
 
-=======
-@charset 'utf-8';
-
-* {box-sizing: border-box;}
-html, body, h1, h2, h3, h4, h5, p, div, header, section, aside, article, footer, span, img, table, tr, td, th, tbody, a, input, button, textarea, form, select, legend, fieldset, figure, figcaption, i {padding: 0;margin: 0;}
-html, body {scroll-behavior: smooth;height: 100%;}
-a:link, a:visited {color: inherit;text-decoration: none;}
-nav ul {list-style: none;margin: 0;padding: 0;box-sizing: border-box;}
-::-webkit-scrollbar {width: 0;}
-
-body {color: #333;font-size: 12px;}
-
-header {position: fixed;width: 100%;z-index: 8;}
-header>.inner {width: 1200px;margin: 0 auto;padding: 30px 0;position: relative;}
-header>.inner>nav {position: absolute;top: 30px;right: 10px;}
-#gnb {display: flex;}
-#gnb>li>a {display: block;padding: 10px 40px;font-size: 18px;color: #fff;}
-
-
-div[id*=page] {width: 100%;height: 100%;position: relative;background-size: cover;background-position: center;}
-div[id*=page]>h2 {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size: 60px;color: #fff;width: 70%;text-align: center;}
-div[id*=page]>p {position: absolute;top: 60%;left: 50%;transform: translate(-50%, -50%);font-size: 16px;color: #fff;width: 60%;}
-
->>>>>>> 69d52939213f9364e83a1a4cd11826a6de78f390
+footer {height: 120px;background-color: #030;color: #fff;display: flex;justify-content: center;padding: 30px 0;}
+footer>div {height: 100%;}
+.flogo {width: 220px;}
+.copy {width: 780px;line-height: 20px;}
+.sns {width: 200px;text-align: center;line-height: 60px;}
+.social {width: 30px;display: inline;filter: saturate(0);margin: 0 10px;}
+.social:hover {filter: saturate(1);}
+.gotop {position: fixed;bottom: 10px;right: 5%;background-color: rgba(255,255,255,0.5);font-size: 36px;padding: 10px;}
